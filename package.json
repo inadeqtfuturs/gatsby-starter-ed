@@ -1,0 +1,59 @@
+{
+  "name": "gatsby-starter-ed",
+  "private": true,
+  "description": "A theme for minimal editions with Gatsby",
+  "version": "0.1.0",
+  "author": "alex christie <alexj.christie@gmail.com>",
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@emotion/styled": "^10.0.7",
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "emotion": "^10.0.7",
+    "emotion-theming": "^10.0.7",
+    "facepaint": "^1.2.1",
+    "gatsby": "^2.1.21",
+    "gatsby-image": "^2.0.31",
+    "gatsby-plugin-catch-links": "^2.0.12",
+    "gatsby-plugin-emotion": "^4.0.4",
+    "gatsby-plugin-manifest": "^2.0.21",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sharp": "^2.0.24",
+    "gatsby-remark-autolink-headers": "^2.0.15",
+    "gatsby-remark-bracketed-spans": "^2.0.3",
+    "gatsby-remark-images": "^3.0.6",
+    "gatsby-remark-prismjs": "^3.2.4",
+    "gatsby-remark-toc": "^1.2.0",
+    "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-transformer-remark": "^2.3.0",
+    "gatsby-transformer-sharp": "^2.1.15",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-helmet": "^5.2.0"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "start": "npm run develop",
+    "format": "prettier --write \"src/**/*.js\"",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
