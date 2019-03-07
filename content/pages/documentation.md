@@ -204,8 +204,14 @@ draft: true
 
 By default, the table of contents is set to false. You only need to add this line if you *want* a table of contents.
 
+## Customizing
+
+There are a few things you can immediately do to customize the look of your minimal edition. Head to the upper most level of the folder Ed. sits in (called the root), and locate `gatsby-config.js`. This file controls the site's title and subtitle (as seen on the homepage), keywords and author (used in SEO), information housed in the sidebar, as well as the theme. Currently there are a predetermined set of colors you can set the theme to (blue, brown, cyan, green, magenta, orange, and red). It currently defaults to red.
+
 ## Bibliographies
+
 (Coming Soon)
 
 ## Publishing
+
 (Coming Soon)
