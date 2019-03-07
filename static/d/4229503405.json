@@ -1,0 +1,1 @@
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"menuTitle":"home"},"fields":{"slug":"/"}}},{"node":{"frontmatter":{"menuTitle":"documentation"},"fields":{"slug":"/documentation/"}}},{"node":{"frontmatter":{"menuTitle":"about"},"fields":{"slug":"/about/"}}}]}}}
