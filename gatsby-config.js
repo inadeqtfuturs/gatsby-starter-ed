@@ -5,10 +5,11 @@ module.exports = {
     description: `Ed. Gatsby is a starter for Gatsby based on the Jekyll theme for Ed`,
     keywords: `minimal editions, academic, digital humanities, gatsbyjs`,
     author: `@inadeqt_futurs`,
+    theme: ``,
     url: ``,
     logo: `/content/images/ed.png`,
     sidebar: {
-      description: `Ed is a Jekyll theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.`,
+      description: `Ed. is a Gatsby theme designed for textual editors based on minimal computing principles, and focused on legibility and flexibility.`,
       licence: `Currently in beta. Distributed with MIT licence.`
     },
   },
@@ -44,11 +45,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `ed-gatsby`,
+        name: `gatsby-starter-ed`,
         short_name: `ed`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#841212`,
+        theme_color: `#841212`,
         display: `minimal-ui`,
         icon: `content/images/ed.png`,
       },

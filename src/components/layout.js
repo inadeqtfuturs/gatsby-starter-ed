@@ -6,6 +6,8 @@ import Header from './header'
 import Main from './main'
 import Sidebar from './sidebar'
 import ToggleButton from './toggleButton';
+import ThemeWrapper from './themeWrapper';
+
 
 import './styles/variables';
 import './styles/global';
@@ -29,27 +31,30 @@ class Layout extends Component {
       <StaticQuery
         query={layoutQuery}
         render={data => (
-          <div className={themeStyle}>
-            <Sidebar
-              open={this.state.isOpen}
-              toggle={() => this.toggleMenu()}
-              sidebar={data.site.siteMetadata.sidebar}
-              title={title}
-              chapters={chapters}
-            />
-            <ToggleButton
-              open={this.state.isOpen}
-              toggle={() => this.toggleMenu()} />
-            <div className={cx('wrap', [this.state.isOpen ? 'open' : 'close'])}>
-              <Header
-                title={data.site.siteMetadata.title}
-                sub={data.site.siteMetadata.subtitle}
+          <ThemeWrapper
+            theme={data.site.siteMetadata.theme}>
+            <div className={themeStyle}>
+              <Sidebar
+                open={this.state.isOpen}
+                toggle={() => this.toggleMenu()}
+                sidebar={data.site.siteMetadata.sidebar}
+                title={title}
+                chapters={chapters}
               />
-              <Main>
-                {children}
-              </Main>
+              <ToggleButton
+                open={this.state.isOpen}
+                toggle={() => this.toggleMenu()} />
+              <div className={cx('wrap', [this.state.isOpen ? 'open' : 'close'])}>
+                <Header
+                  title={data.site.siteMetadata.title}
+                  sub={data.site.siteMetadata.subtitle}
+                />
+                <Main>
+                  {children}
+                </Main>
+              </div>
             </div>
-          </div>
+          </ThemeWrapper>
         )}
       />
     )
@@ -64,6 +69,7 @@ const layoutQuery = graphql`
       siteMetadata {
         title
         subtitle
+        theme
         sidebar {
           ...sidebarObject
         }

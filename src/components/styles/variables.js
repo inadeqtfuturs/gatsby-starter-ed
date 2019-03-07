@@ -1,12 +1,11 @@
 import { injectGlobal } from 'emotion';
-import { theme } from './theme'
 
 const variables = injectGlobal`
   :root {
     --textColor: #454545;
     --textHeadingColor: #404040;
 
-    --linkColor: ${theme.default};
+    --linkColor: #841212;
 
     --fontFamily: serif;
     --fontFamilyHeader: serif;
