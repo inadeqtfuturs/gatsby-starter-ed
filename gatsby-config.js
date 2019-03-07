@@ -13,7 +13,7 @@ module.exports = {
       licence: `Currently in beta. Distributed with MIT licence.`
     },
   },
-  pathPrefix: `gatsby-starter-ed`,
+  pathPrefix: `/gatsby-starter-ed`,
   plugins: [
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-emotion',
