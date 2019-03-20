@@ -17,7 +17,7 @@ export default ({ data }) => {
       },
     },
   } = data
-
+  console.log(tableOfContents)
   return (
     <Layout>
       <SEO
