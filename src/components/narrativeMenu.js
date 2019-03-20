@@ -21,16 +21,27 @@ class NarrativeMenu extends Component {
     const { title, chapters,
           themeStyle=style } = this.props;
     /* sanitize */
-    // console.log(chapters)
-    // const menuArray = chapters.replace(/(<ul>|<li>|<\/ul>|<\/li>|<a href="|\r\n|\n|\r)/g, "").split("</a>").slice(0, -1).map(item => {
-    //  return item.split("\">")
-    // });
-    // console.log(menuArray)
+    const menuArray = chapters.replace(/(<ul>|<li>|<\/ul>|<\/li>|<a href="|\r\n|\n|\r)/g, "").split("</a>").slice(0, -1).map(item => {
+      return item.split("\">")
+    });
+    console.log(menuArray)
+
     return (
       <nav className={themeStyle}>
         <Link to={'/'}>Home</Link>
         <a href={'#title'}>{title}</a>
-        <section dangerouslySetInnerHTML={{ __html: chapters }} />
+        {menuArray.map((item, index) => {
+          return (
+            <a
+              href={item[0]}
+              onClick={this.toggleClass.bind(this, index)}
+              className={this.state.activeIndex===index ? 'active' : null}
+              key={index}
+            >
+              {item[1]}
+            </a>
+          )
+        })}
       </nav>
     )
   }
