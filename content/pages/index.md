@@ -18,4 +18,3 @@ Ed. is a [Gatsby](https://www.gatsbyjs.org/) theme designed for textual editors 
 - [Delayed till she had ceased to know](/text/poem-2)
 - ["O Captain! My Captain!"](/text/poem-footnotes)
 - [A Raisin in the Sun (excerpt)](/text/drama)
-- [The Awakening](/text/narrative)
