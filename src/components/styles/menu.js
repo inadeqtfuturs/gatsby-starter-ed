@@ -2,13 +2,6 @@ import { css } from 'emotion';
 
 const menu = css`
   border-bottom: 1px solid rgba(255,255,255,.1);
-  section > ul {
-    list-style-type: none;
-    padding-left: 0;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
   a {
     display: block;
     padding: .5rem 1.5rem;
