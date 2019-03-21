@@ -71,13 +71,13 @@ const layoutQuery = graphql`
         subtitle
         theme
         sidebar {
-          ...sidebarObject
+          ...SidebarInfo
         }
       }
     }
   }
-
-  fragment sidebarObject on sidebar_2 {
+  
+  fragment SidebarInfo on SiteSiteMetadataSidebar {
     description
     licence
   }
