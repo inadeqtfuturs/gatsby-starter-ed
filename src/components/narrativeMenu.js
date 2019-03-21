@@ -24,7 +24,6 @@ class NarrativeMenu extends Component {
     const menuArray = chapters.replace(/(<ul>|<li>|<\/ul>|<\/li>|<a href="|\r\n|\n|\r)/g, "").split("</a>").slice(0, -1).map(item => {
       return item.split("\">")
     });
-    console.log(menuArray)
 
     return (
       <nav className={themeStyle}>
